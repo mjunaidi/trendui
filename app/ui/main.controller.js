@@ -34,7 +34,7 @@
   MainController.prototype._initHeader = function() {
 
     this.navbar = {
-      templateUrl : '../app/ui/html/navbar.html',
+      templateUrl : 'app/ui/html/navbar.html',
       pages: [
         {
           "name" : "Home", "path" : "/", "ra" : false
@@ -52,11 +52,11 @@
     this.store('theme', this._themeService.pick(8));
 
     this.aboutOpts = {
-      templateUrl : '../app/ui/html/about.html',
+      templateUrl : 'app/ui/html/about.html',
       config : function() {
         return {
           'get' : {
-            'paths' : [ '../app/ui/json/about.json' ],
+            'paths' : [ 'app/ui/json/about.json' ],
             'key' : 'init'
           }
         };
@@ -156,7 +156,7 @@
 
   MainController.prototype.openModal = function() {
     this.modal({
-      templateUrl: '../app/ui/html/modal.html'
+      templateUrl: 'app/ui/html/modal.html'
     });
   };
 
