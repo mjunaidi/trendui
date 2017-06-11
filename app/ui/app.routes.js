@@ -5,9 +5,9 @@
 
   function configureRoutes($routeProvider, $locationProvider) {
     $routeProvider.when("/", {
-      templateUrl : '../app/ui/html/home.html'
+      templateUrl : 'app/ui/html/home.html'
     }).when("/blog", {
-      templateUrl : '../app/ui/html/blog.html'
+      templateUrl : 'app/ui/html/blog.html'
     }).otherwise({
       redirectTo : '/'
     });
