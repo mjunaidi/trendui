@@ -81,7 +81,7 @@
     }
 
     if (this._location.path() === '/blog') {
-      /* Anything that needs to be executed in path /free goes here... */
+      /* Anything that needs to be executed in path /blog goes here... */
     }
   };
 
